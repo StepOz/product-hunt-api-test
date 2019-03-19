@@ -48,7 +48,8 @@ export default {
       let query = this.selectOptions.find(item => {
         return item.value === val
       })
-      this.$router.replace(`/?day=${query.label}`)
+      let url = query.value === 0 ? '/' : `/?day=${query.label}`
+      this.$router.push(url)
       this.$store.dispatch('product/getAllProducts', val)
     }
   },

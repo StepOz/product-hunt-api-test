@@ -19,7 +19,7 @@ module.exports = function (ctx) {
     supportIE: true,
     build: {
       scopeHoisting: true,
-      // vueRouterMode: 'history',
+      vueRouterMode: 'history',
       // vueCompiler: true,
       // gzip: true,
       // analyze: true,
@@ -54,7 +54,20 @@ module.exports = function (ctx) {
         'QListHeader',
         'QItem',
         'QItemMain',
-        'QItemSide'
+        'QItemSeparator',
+        'QItemSide',
+        'QItemTile',
+        'QSelect',
+        'QSearch',
+        'QCard',
+        'QCardTitle',
+        'QCardMain',
+        'QCardMedia',
+        'QCardSeparator',
+        'QCardActions',
+        'QAjaxBar',
+        'QSpinner',
+        'QSpinnerDots'
       ],
       directives: [
         'Ripple'
@@ -62,7 +75,8 @@ module.exports = function (ctx) {
       // Quasar plugins
       plugins: [
         'Notify'
-      ]
+      ],
+      cssAddon: true
       // iconSet: ctx.theme.mat ? 'material-icons' : 'ionicons'
       // i18n: 'de' // Quasar language
     },

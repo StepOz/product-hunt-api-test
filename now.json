@@ -2,9 +2,6 @@
   "version": 0,
   "name": "Livestorm-Producthunt-Test",
   "alias": "stepoz-test-livestorm.now.sh",
-  "env": {
-    "PH_TOKEN": "d5c0c0a62d2c67211b043ed39bf70a5930821905aa7ec812dc4a1d9f0792aca7"
-  },
   "routes": [
     {"src": "^/js/(.*)", "dest": "/js/$1"},
     {"src": "^/css/(.*)", "dest": "/css/$1"},
